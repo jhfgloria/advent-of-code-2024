@@ -39,7 +39,6 @@ Req.Request.new(method: :get, url: "https://adventofcode.com/2024/day/1/input")
 |> DayOne.create_lists()
 # Uncomment the line below to solve part 1
 # |> DayOne.find_distances
-# |> Enum.sum
 |> DayOne.find_distances_in_repetition()
 |> Enum.sum()
 |> IO.inspect()
