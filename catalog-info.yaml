@@ -1,0 +1,17 @@
+# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-component
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: advent-of-code-2024
+  links:
+    - url: https://adventofcode.com/2024
+      title: Advent of Code 2024
+      type: proposition
+  tags:
+    - elixir
+spec:
+  type: application
+  lifecycle: production
+  owner: developers
+  dependsOn:
+    - component:default/advent-of-code-2023
